@@ -1,7 +1,4 @@
 import { Module } from "@nestjs/common";
-import { VoteModule } from "./vote/vote.module";
-import { OptionModule } from "./option/option.module";
-import { PollModule } from "./poll/poll.module";
 import { UserModule } from "./user/user.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
@@ -15,9 +12,6 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 @Module({
   controllers: [],
   imports: [
-    VoteModule,
-    OptionModule,
-    PollModule,
     UserModule,
     HealthModule,
     PrismaModule,

@@ -5,18 +5,6 @@ import { theme } from "./theme/theme";
 import Login from "./Login";
 import "./App.scss";
 import Dashboard from "./pages/Dashboard";
-import { VoteList } from "./vote/VoteList";
-import { VoteCreate } from "./vote/VoteCreate";
-import { VoteEdit } from "./vote/VoteEdit";
-import { VoteShow } from "./vote/VoteShow";
-import { OptionList } from "./option/OptionList";
-import { OptionCreate } from "./option/OptionCreate";
-import { OptionEdit } from "./option/OptionEdit";
-import { OptionShow } from "./option/OptionShow";
-import { PollList } from "./poll/PollList";
-import { PollCreate } from "./poll/PollCreate";
-import { PollEdit } from "./poll/PollEdit";
-import { PollShow } from "./poll/PollShow";
 import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
@@ -47,27 +35,6 @@ const App = (): React.ReactElement => {
         dashboard={Dashboard}
         loginPage={Login}
       >
-        <Resource
-          name="Vote"
-          list={VoteList}
-          edit={VoteEdit}
-          create={VoteCreate}
-          show={VoteShow}
-        />
-        <Resource
-          name="Option"
-          list={OptionList}
-          edit={OptionEdit}
-          create={OptionCreate}
-          show={OptionShow}
-        />
-        <Resource
-          name="Poll"
-          list={PollList}
-          edit={PollEdit}
-          create={PollCreate}
-          show={PollShow}
-        />
         <Resource
           name="User"
           list={UserList}
